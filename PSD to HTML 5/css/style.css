@@ -1,0 +1,351 @@
+
+/* Helper Class */
+.alignLeft{
+    float: left;
+}
+.alignRight{
+    float:right;
+}
+.margin-bottom-10{
+    margin-bottom: 10px;
+}
+.margin-bottom-20{
+    margin-bottom: 20px;
+}
+.margin-bottom-30{
+    margin-bottom: 30px;
+}
+.margin-bottom-40{
+    margin-bottom: 40px;
+}
+strong, 
+b{
+    font-weight:700px;
+}
+em, 
+i{
+    font-style: italic;
+}
+p, ul li,
+ol li
+{
+    font-size:16px;
+    line-height:23px;
+    margin-bottom:20px;
+}
+/* Helper Class */ /* Helper Class */ /* Helper Class */ /* Helper Class */
+
+/* forces all elements to behave like border boxes */
+* {
+    box-sizing:border-box;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+
+@font-face{
+    font-family: 'HelveticaNeue-Thin';
+    src: local('HelveticaNeue-Thin.otf'), url('HelveticaNeue-Thin.otf') format('opentype');
+}
+
+#hero{
+    height: 850px;
+    /* linear gradien is Top, to Bottom */
+    background-image: linear-gradient(rgba(218,51,46, 0.6), 
+    rgba(218,51,46,0.6)), url("../img/hero-bg.png");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    overflow: hidden;
+}
+.container{
+    /* PSD measurement */
+    max-width:1100px;
+    max-height:850px;
+    width:100%;
+    /* margin: top/bottom left/right */
+    margin: 0 auto;
+    /* Allows Child Divs to have changed positioning */
+    position: relative;
+    padding: 40px 20px;
+}
+h2{
+    font-size: 52px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.nav li{
+    display: inline-block;
+}
+.nav li a{
+    color:white;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin-left:30px;
+    padding-bottom:3px;
+    border-bottom: 4px solid white transparent;
+}
+
+.nav li a:hover{
+    border-bottom: 4px solid white;
+    transition: border-bottom 0.3s, color 0.1s;
+}
+
+#hero h2{
+    color:white;
+    margin-bottom: 40px;
+}
+
+
+.cta{
+    display:inline-block;
+    margin-top: 90px;
+    /* needed for child .imgs position:absolute */
+    position:relative;  
+}
+.imgs{
+    float: right;
+    position: absolute;
+    right: -185px;
+    /* The img div collapse to upper right w/o these */
+    height:663px;
+    width:600px;
+    /* cuts of the phone bottom */
+    overflow:hidden;
+}
+    
+/* .iphone{
+    width:85%;
+    position: relative;
+    margin-bottom: -240px;
+} */
+.cta-info{
+    width:60%;
+    padding-right: 150px;
+    float:left;
+    
+}
+.hero-para{
+    font-size: 36px;
+    line-height: 40px;
+    font-family: 'HelveticaNeue-Thin';
+    color:white;
+    margin-bottom:55px;
+}
+.cta-button{
+    padding: 23px 35px;
+    background: #282828;
+    color:white;
+    text-decoration: none;
+    border-radius: 50px;
+    transition: 0.3s;
+}
+.cta-button:hover {
+    background: #383737;
+    transition: 0.3s;
+}
+.phone-icon{
+    vertical-align: middle;
+    padding-right: 20px;
+}
+
+/* APP FEATURES */
+
+#app-features .container{
+    /* centers all content */
+    text-align: center;
+    padding:60px 20px;
+}
+
+#app-features h2{
+    color:#8a8a8a;
+    margin-bottom:40px;
+}
+.p-features{
+    font-family: 'HelveticaNeue-Thin';
+    font-size:22px;
+    line-height: 28px;
+    padding: 0px 130px;
+}
+.col-4-app{
+    width:33.33%;
+    float: left;
+    padding: 0px 45px;
+}
+.col-4-app p{
+    font-family:  'HelveticaNeue-Thin';
+    line-height: 24px;
+}
+.row{
+    /* gives the row the proper height 
+    when using 'float' on the children */
+    overflow: hidden;
+    margin-top:50px;
+}
+.row h3{
+    font-size: 24px;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin: 30px 0;
+}
+.row p{
+    color: #646464;
+}
+
+/* Nose Section */
+
+#nose{
+    background-image: url('../img/clown-bckgrnd.png');
+    background-size: cover;
+    background-position: center;
+}
+#nose .container{
+   padding: 0 0;
+}
+.download-info{
+    width:50%;
+    padding:200px 0;
+}
+#nose h2{
+    margin-bottom: 40px;
+    color: white;
+}
+
+.nose-p{
+    font-size: 24px;
+    line-height: 30px;
+    font-family: 'HelveticaNeue-Thin';
+    padding-bottom: 30px;
+}
+.download-btn{
+    padding:15px;
+    background: #d9332d;
+    border-radius:50px;
+    color:white;
+    text-decoration: none;
+    margin-left: 20px;
+}
+.download-btn:hover {
+    background: #d9332d;
+    transition: 0.3s;
+}
+.reddish{
+    color:#f55150;
+}
+
+/* FOOTER */
+footer{
+    background: #2e2e38;
+    color: #ffffff;
+    height:610px;
+}
+footer .container{
+    padding: 120px 20px;
+}
+footer h4{
+    font-size:20px;
+}
+footer p{
+    font-family: 'HelveticaNeue-Thin';
+}
+.ul-posts li{
+    font-size: 15px;
+    line-height: 20px;
+    padding-left: 70px;
+}
+.col-4-footer{
+    width: 33.33%;
+    float: left;
+    margin-top:77px;
+    padding:30px;
+}
+.ul-posts, .ul-tweets{
+    margin-top: 25px;
+    font-family: 'HelveticaNeue-Thin';
+}
+.reddish-bg{
+    background: url('../img/rectangle.png') no-repeat;
+    height: 42px;
+}
+.block{
+    display: block;
+}
+
+.p-about{
+    font-size: 15px;
+    font-style: italic;
+    margin-top: 25px;
+}
+.ul-tweets li{
+    list-style: none;
+    margin-bottom: 25px;
+}
+.smallText {
+    font-size: 11px;
+    margin-top: 5px;
+}
+
+/* COPYRIGHT */
+.copyright{
+    background: #d7dedc;
+}
+
+.copyright .container{
+    padding: 40px;  
+    text-align: center;
+}
+.inline{
+    display: inline-block;
+    font-size: 20px;
+    vertical-align: middle;
+}
+.copywright .images{
+    margin-bottom: 5px;
+    vertical-align: 0;
+}
+.cr,
+.me{
+    margin-right: 40px;
+    border-right: 2px solid black;
+    padding-right: 40px;
+}
+
+.fb,
+.tw
+{
+    margin-right: 20px;
+}
+
+/* Animate.css */
+.iphone-off{
+    position: absolute;
+    right:90px;
+}
+.iphone-screen{
+    position: absolute;
+    right:90px;
+}
+.iphone-btn{
+    position: absolute;
+    top:0px;
+    right:229px;
+    
+}
+.js-wp-2{
+    opacity:0;
+}
+.js-wp-2.animated{
+    opacity:1;
+}
+
+.js-wp-3{
+    opacity:0;
+    animation-delay: 2.7s;
+}
+.js-wp-3.animated{
+    opacity:1;
+}
